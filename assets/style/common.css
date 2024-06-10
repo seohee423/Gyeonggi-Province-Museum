@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* fonts */
+/* Noto Sans KR, Noto Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@1,100..900&display=swap');
+
+:root {
+    /* 폰트 설정 */
+    --font-m-ko:"Noto Sans KR","Noto Sans",-apple-system, BlinkMacSystemFont, "Helvetica Neue","Apple SD Gothic Neo", Arial, sans-serif;
+    --font-m-en: "Noto Sans",-apple-system, BlinkMacSystemFont, "Helvetica Neue","Apple SD Gothic Neo", Arial, sans-serif;
+    --font-pc-ko:"Noto Sans KR","Noto Sans",-apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+    --font-pc-en:"Noto Sans",-apple-system, BlinkMacSystemFont, "Helvetica Neue","Apple SD Gothic Neo", Arial, sans-serif;
+    
+    /* 폰트 크기 설정 */
+    --font-xxlg: 50px;
+    --font-xlg: 33px;
+    --font-lg: 25px;
+    --font-md: 20px;
+    --font-sm: 16px;
+    --font-xsm: 12px;
+
+
+    /* 폰트 두께 */
+    --font-semiBold: 600;
+    --font-medium: 500;
+    --font-regular: 400;
+
+    /* 색상 설정 */
+    --color-white: #fff; 
+    --color-black: #000; 
+}
