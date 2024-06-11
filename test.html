@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Effect</title>
+  <style>
+    .main-logo h2 {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0;
+      animation: typing 5s steps(40, end);
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    .main-logo h2::after {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      height: 1em;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-logo">
+    <img src="./images/ㄱㄱㄷㅂㅁㄱlogo.png" alt="">
+    <h2></h2>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const text = document.querySelector('.main-logo h2');
+      const message = "경기도박물관";
+      let i = 0;
+
+      function typeWriter() {
+        if (i < message.length) {
+          text.textContent += message.charAt(i);
+          i++;
+          setTimeout(typeWriter, 200); // 타이핑 간격을 200밀리초로 설정
+        }
+      }
+
+      typeWriter();
+    });
+  </script>
+</body>
+</html>

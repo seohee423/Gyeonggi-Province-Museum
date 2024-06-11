@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>경기도박물관</title>
-  <meta name="viewport" content="width=devi-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- <meta name="viewport" content="width=devi-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"> -->
   <!-- favicon -->
   <link rel="icon" href="./favicon/favicon-32x32.png" sizes="any">
   <link rel="icon" href="./favicon/browserconfig.xml" type="image/svg+xml">
@@ -36,6 +36,9 @@
 
   <!----------- header ---------->
   <header>
+    <div class="menu-logo-wrapper">
+      <a href=""><img src="./images/경기도박물관logoblack.png" alt=""></a>
+    </div>
     <div class="menu-wrapper">
       <ul class="global-menu">
         <li><a href="">안내</a></li>
@@ -57,7 +60,7 @@
         <h2>경기도박물관</h2>
       </div>
       <div class="agency-logo">
-        <img src="./images/경기도박물관logo.svg" alt="">
+        <img src="./images/경기도박물관logoblack.png" alt="">
         <img src="./images/경기문화재단logo.png" alt="">
         <img src="./images/경기logo.png" alt="">
       </div>
@@ -67,7 +70,7 @@
       <p>Scroll down</p>
     </div>
     <div class="video-wrapper">
-      <video src="./images/main-video.mp4" autoplay loop></video>
+      <video src="./images/main-video.mp4" autoplay muted loop></video>
     </div>
   </section>
 
@@ -90,20 +93,40 @@
         <p>2020-08-04(화)~</p>
       </div>
       <div class="exhibition-contents contents1">
-        <h3 class="exhibition-title">2F 고려·조선실</h3>
-        <img src="./images/more-btn.png" alt="">
+        <div class="exhibition-img-wrapper">
+          <img src="./images/상설전시1.jpg" alt="">
+        </div>
+        <div class="exhibition-txt-wrapper">
+          <h3 class="exhibition-title">2F 고려·조선실</h3>
+          <img src="./images/more-btn.png" alt="">
+        </div>
       </div>
       <div class="exhibition-contents contents2">
-        <h3 class="exhibition-title">1F 실감영상실</h3>
-        <img src="./images/more-btn.png" alt="">
+        <div class="exhibition-img-wrapper">
+          <img src="./images/상설전시2.png" alt="">
+        </div>
+        <div class="exhibition-txt-wrapper">
+          <h3 class="exhibition-title">1F 실감영상실</h3>
+          <img src="./images/more-btn.png" alt="">
+        </div>
       </div>
       <div class="exhibition-contents contents3">
-        <h3 class="exhibition-title">2F 선사·고대실</h3>
-        <img src="./images/more-btn.png" alt="">
+        <div class="exhibition-img-wrapper">
+          <img src="./images/상설전시3.jpg" alt="">
+        </div>
+        <div class="exhibition-txt-wrapper">
+          <h3 class="exhibition-title">2F 선사·고대실</h3>
+          <img src="./images/more-btn.png" alt="">
+        </div>
       </div>
       <div class="exhibition-contents contents4">
-        <h3 class="exhibition-title">1F 기증실</h3>
-        <img src="./images/more-btn.png" alt="">
+        <div class="exhibition-img-wrapper">
+          <img src="./images/상설전시4.jpg" alt="">
+        </div>
+        <div class="exhibition-txt-wrapper">
+          <h3 class="exhibition-title">1F 기증실</h3>
+          <img src="./images/more-btn.png" alt="">
+        </div>
       </div>
     </div>
 
@@ -198,7 +221,7 @@
           <h3>● 2024년 경기도박물관 &lt;경기 천년 시간 수호대, 미래로&gt; 교육 보조 강사 최종 합격자 명단 공고</h3>
           <p>2024.01.19</p>
         </div>
-        <p>2024년 경기도박물관 &lt;경기 천년 시간 수호대, 미래로&gt; 교육 보조 강사의 최종 합격자 명단을 공고합니다.</p><br>
+        <p>2024년 경기도박물관 &lt;경기 천년 시간 수호대, 미래로&gt; 교육 보조 강사의 최종 합격자 명단을 공고합니다.</p>
         <p>[문의사항]<br>경기도박물관 학예운영실 (031-288-5350)</p>
       </div>
     </div>
@@ -337,7 +360,17 @@
     <div class="location-btn-box">
       <h3>오시는 길</h3>
       <div class="location-btn">
-        <p>오시는 길/대중교통/주차안내</p>
+        <div class="location-txt wrapper">
+          <div class="txt-wrapper active">
+            <p>오시는 길</p>
+          </div>
+          <div class="txt-wrapper">
+            <p>대중교통</p>
+          </div>
+          <div class="txt-wrapper">
+            <p>주차안내</p>
+          </div>
+        </div>
         <img src="./images/arrow.png" alt="">
       </div>
     </div>
@@ -345,7 +378,7 @@
 
   <footer>
     <div class="footer-top-wrapper">
-      <img src="./images/ㄱㄱㄷlogo.png" alt="">
+      <img src="./images/ㄱㄱㄷlogo.png" alt="" class="footer-logo">
       <div class="footer-txt">
         <h3>여기가 경기!<br>도민들의 문화 놀이터,<br><span>경기도박물관</span></h3>
         <div class="sns-logo">
