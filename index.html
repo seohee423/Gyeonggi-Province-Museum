@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>경기도박물관</title>
-  <!-- <meta name="viewport" content="width=devi-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"> -->
+  <meta name="viewport" content="width=devi-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <!-- favicon -->
   <link rel="icon" href="./favicon/favicon-32x32.png" sizes="any">
   <link rel="icon" href="./favicon/browserconfig.xml" type="image/svg+xml">
@@ -16,6 +16,8 @@
   <meta property="og:image" content="https://seohee423.github.io/Gyeonggi-Province-Museum//images/상설전시3.jpg">
   <meta property="og:description" content="여기가 경기! 도민들의 문화 놀이터, 경기도박물관">
   <meta property="og:type" content="website">
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="./assets/js/jquery-ui.css">
   <!-- reset css -->
   <link rel="stylesheet" href="./assets/style/reset.css">
   <!-- 공통된 css style -->
@@ -28,27 +30,33 @@
   <script src="./assets/js/jquery-ui.min.js"></script>
   <!-- page 별 사용되는 js -->
   <script defer src="./index.js"></script>
-  <!-- jQuery UI CSS -->
-  <link rel="stylesheet" href="./assets/js/jquery-ui.css">
+
 </head>
 
 <body>
+  <!----------- cursor ---------->
+  <div class="cursor-img">
+    <img src="./images/cursor.png" alt="cursor Image" class="image-effect" id="cursorImage">
+  </div>
 
   <!----------- header ---------->
   <header>
     <div class="menu-logo-wrapper">
-      <a href=""><img src="./images/경기도박물관logoblack.png" alt=""></a>
+      <a href="./index.html"><img src="./images/경기도박물관logoblack.png" alt="header logo"></a>
     </div>
     <div class="menu-wrapper">
       <ul class="global-menu">
-        <li><a href="">안내</a></li>
-        <li><a href="">전시</a></li>
-        <li><a href="">교육·행사</a></li>
-        <li><a href="">소장품</a></li>
-        <li><a href="">학습·출판</a></li>
-        <li><a href="">소식·참여</a></li>
+        <li><a href="#">안내</a></li>
+        <li><a href="#">전시</a></li>
+        <li><a href="#">교육·행사</a></li>
+        <li><a href="#">소장품</a></li>
+        <li><a href="#">학습·출판</a></li>
+        <li><a href="#">소식·참여</a></li>
       </ul>
-      <a href=""><img src="./images/menu.png" alt="menu"></a>
+      <form class="search">
+        <input type="search">
+        <a href="#"><img src="./images/search.png" alt="serach icon"></a>
+      </form>
     </div>
   </header>
 
@@ -56,21 +64,23 @@
   <section class="main-wrapper">
     <div class="main-left">
       <div class="main-logo">
-        <img src="./images/ㄱㄱㄷㅂㅁㄱlogo.png" alt="">
+        <img src="./images/ㄱㄱㄷㅂㅁㄱlogo.png" alt="main logo">
         <h2>경기도박물관</h2>
       </div>
       <div class="agency-logo">
-        <img src="./images/경기도박물관logoblack.png" alt="">
-        <img src="./images/경기문화재단logo.png" alt="">
-        <img src="./images/경기logo.png" alt="">
+        <img src="./images/경기도박물관logoblack.png" alt="logo1">
+        <img src="./images/경기문화재단logo.png" alt="logo2">
+        <img src="./images/경기logo.png" alt="logo3">
       </div>
     </div>
     <div class="main-right">
-      <h3>보고, 배우고, 즐기는 종합 문화 공간<br>경기도 박물관에 오신 것을 환영합니다.</h3>
       <p>Scroll down</p>
+      <h3>보고, 배우고, 즐기는 종합 문화 공간&nbsp;<br>경기도 박물관에 오신 것을 환영합니다.</h3>
     </div>
-    <div class="video-wrapper">
-      <video src="./images/main-video.mp4" autoplay muted loop></video>
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video src="./images/main-video.mp4" autoplay muted loop></video>
+      </div>
     </div>
   </section>
 
@@ -78,13 +88,13 @@
   <section class="exhibition-wrapper">
     <div class="exhibition-info-wrapper">
       <div class="exhibition-info">
-        <img src="./images/clock.png" alt="">
+        <img src="./images/clock.png" alt="clock icon">
         <h4>오늘의 관람시간</h4>
         <p>10:00 - 18:00</p>
       </div>
       <div class="location-info">
         <h4>오시는 길 바로가기</h4>
-        <img src="./images/arrow.png" alt="">
+        <img src="./images/arrow.png" alt="arrow icon">
       </div>
     </div>
     <div class="exhibition">
@@ -94,38 +104,38 @@
       </div>
       <div class="exhibition-contents contents1">
         <div class="exhibition-img-wrapper">
-          <img src="./images/상설전시1.jpg" alt="">
+          <img src="./images/상설전시1.jpg" alt="exhibition1">
         </div>
         <div class="exhibition-txt-wrapper">
           <h3 class="exhibition-title">2F 고려·조선실</h3>
-          <img src="./images/more-btn.png" alt="">
+          <img src="./images/more-btn.png" alt="more-btn">
         </div>
       </div>
       <div class="exhibition-contents contents2">
         <div class="exhibition-img-wrapper">
-          <img src="./images/상설전시2.png" alt="">
+          <img src="./images/상설전시2.png" alt="exhibition2">
         </div>
         <div class="exhibition-txt-wrapper">
           <h3 class="exhibition-title">1F 실감영상실</h3>
-          <img src="./images/more-btn.png" alt="">
+          <img src="./images/more-btn.png" alt="more-btn">
         </div>
       </div>
       <div class="exhibition-contents contents3">
         <div class="exhibition-img-wrapper">
-          <img src="./images/상설전시3.jpg" alt="">
+          <img src="./images/상설전시3.jpg" alt="exhibition3">
         </div>
         <div class="exhibition-txt-wrapper">
           <h3 class="exhibition-title">2F 선사·고대실</h3>
-          <img src="./images/more-btn.png" alt="">
+          <img src="./images/more-btn.png" alt="more-btn">
         </div>
       </div>
       <div class="exhibition-contents contents4">
         <div class="exhibition-img-wrapper">
-          <img src="./images/상설전시4.jpg" alt="">
+          <img src="./images/상설전시4.jpg" alt="exhibition4">
         </div>
         <div class="exhibition-txt-wrapper">
           <h3 class="exhibition-title">1F 기증실</h3>
-          <img src="./images/more-btn.png" alt="">
+          <img src="./images/more-btn.png" alt="more-btn">
         </div>
       </div>
     </div>
@@ -135,10 +145,10 @@
         <h3>관람안내</h3>
         <p>관람안내/정기 해설 안내/관람 시 유의사항</p>
       </div>
-      <a href="" class="view-more-btn">
-        <p>view more</p>
-        <img src="./images/arrow.png" alt="">
-      </a>
+      <div class="view-more-btn-wrapper">
+        <button class="view-more-btn">view more</button>
+        <img src="./images/arrow.png" alt="arrow icon">
+      </div>
     </div>
   </section>
 
@@ -153,7 +163,7 @@
         </div>
       </div>
       <div class="program-img">
-        <a href=""><img src="./images/문화행사1.jpg" alt=""></a>
+        <a href="#"><img src="./images/문화행사1.jpg" alt="program1"></a>
       </div>
     </div>
     <div class="program">
@@ -162,7 +172,7 @@
         <h3>2023 여름방학 프로그램 &lt;동동하하&gt;</h3>
       </div>
       <div class="program-img">
-        <a href=""><img src="./images/문화행사2.png" alt=""></a>
+        <a href="#"><img src="./images/문화행사2.png" alt="program2"></a>
       </div>
     </div>
     <div class="program">
@@ -171,7 +181,7 @@
         <h3>2023 경기도박물관 아세안 영화 상영회</h3>
       </div>
       <div class="program-img">
-        <a href=""><img src="./images/문화행사3.png" alt=""></a>
+        <a href="#"><img src="./images/문화행사3.png" alt="program3"></a>
       </div>
     </div>
     <div class="view-more-wrapper">
@@ -179,10 +189,10 @@
         <h3>교육·문화행사</h3>
         <p>어린이/청소년/성인</p>
       </div>
-      <a href="" class="view-more-btn">
-        <p>view more</p>
-        <img src="./images/arrow.png" alt="">
-      </a>
+      <div class="view-more-btn-wrapper">
+        <button class="view-more-btn">view more</button>
+        <img src="./images/arrow.png" alt="arrow icon">
+      </div>
     </div>
   </section>
 
@@ -230,10 +240,10 @@
         <h3>소식·참여</h3>
         <p>공고/새소식/보도자료</p>
       </div>
-      <a href="" class="view-more-btn">
-        <p>view more</p>
-        <img src="./images/arrow.png" alt="">
-      </a>
+      <div class="view-more-btn-wrapper">
+        <button class="view-more-btn">view more</button>
+        <img src="./images/arrow.png" alt="arrow icon">
+      </div>
     </div>
   </section>
 
@@ -243,12 +253,11 @@
       <p>● 소장유물</p>
       <p>여러분의 과거가 경기도의 현재와 미래가 됩니다.<br>경기도박물관은 앞으로도 우리 도와 관련한 유물을 확보하고<br>보존과 전승을 위해 노력하겠습니다.</p>
     </div>
-
     <div class="items-contents-wrapper">
       <div class="items-list1">
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물1.jpg" alt="">
+            <img src="./images/소장유물1.jpg" alt="items1">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -257,7 +266,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물2.jpg" alt="">
+            <img src="./images/소장유물2.jpg" alt="items2">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -266,7 +275,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물3.jpg" alt="">
+            <img src="./images/소장유물3.jpg" alt="items3">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -275,7 +284,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물4.jpg" alt="">
+            <img src="./images/소장유물4.jpg" alt="items4">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -286,7 +295,7 @@
       <div class="items-list2">
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물5.jpg" alt="">
+            <img src="./images/소장유물5.jpg" alt="items5">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -295,7 +304,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물6.jpg" alt="">
+            <img src="./images/소장유물6.jpg" alt="items6">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -304,7 +313,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물7.jpg" alt="">
+            <img src="./images/소장유물7.jpg" alt="items7">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -315,7 +324,7 @@
       <div class="items-list3">
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물8.jpg" alt="">
+            <img src="./images/소장유물8.jpg" alt="items8">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -324,7 +333,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물9.jpg" alt="">
+            <img src="./images/소장유물9.jpg" alt="items9">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -333,7 +342,7 @@
         </div>
         <div class="items">
           <div class="items-img-wrapper">
-            <img src="./images/소장유물10.jpg" alt="">
+            <img src="./images/소장유물10.jpg" alt="items10">
           </div>
           <div class="items-txt-wrapper">
             <p>서화</p>
@@ -342,24 +351,46 @@
         </div>
       </div>
     </div>
-
     <div class="view-more-wrapper">
       <div class="view-more-txt">
         <h3>소장유물</h3>
         <p>서화/고문서/고유물/민속공예/복식/도자</p>
       </div>
-      <a href="" class="view-more-btn">
-        <p>view more</p>
-        <img src="./images/arrow.png" alt="">
-      </a>
+      <div class="view-more-btn-wrapper">
+        <button class="view-more-btn">view more</button>
+        <img src="./images/arrow.png" alt="arrow icon">
+      </div>
     </div>
   </section>
 
   <!----------- 오시는길 ---------->
   <section class="location-wrapper">
+    <div class="location-img-container">
+      <div class="location-img fade">
+        <img src="./images/location1.png" alt="location1">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location2.jpg" alt="location2">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location3.jpg" alt="location3">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location4.jpg" alt="location4">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location5.jpg" alt="location5">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location6.jpg" alt="location6">
+      </div>
+      <div class="location-img fade">
+        <img src="./images/location7.jpg" alt="location7">
+      </div>
+    </div>
     <div class="location-btn-box">
       <h3>오시는 길</h3>
-      <div class="location-btn">
+      <div class="location-btn view-more-btn">
         <div class="location-txt wrapper">
           <div class="txt-wrapper active">
             <p>오시는 길</p>
@@ -371,20 +402,20 @@
             <p>주차안내</p>
           </div>
         </div>
-        <img src="./images/arrow.png" alt="">
+        <img src="./images/arrow.png" alt="arrow icon">
       </div>
     </div>
   </section>
 
   <footer>
     <div class="footer-top-wrapper">
-      <img src="./images/ㄱㄱㄷlogo.png" alt="" class="footer-logo">
+      <img src="./images/ㄱㄱㄷlogo.png" alt="logo" class="footer-logo">
       <div class="footer-txt">
         <h3>여기가 경기!<br>도민들의 문화 놀이터,<br><span>경기도박물관</span></h3>
         <div class="sns-logo">
-          <a href=""><img src="./images/instagram.png" alt=""></a>
-          <a href=""><img src="./images/facebook.png" alt="" class="facebook"></a>
-          <a href=""><img src="./images/youtube.png" alt=""></a>
+          <a href="#"><img src="./images/instagram.png" alt="instagram logo"></a>
+          <a href="#"><img src="./images/facebook.png" alt="facebook logo" class="facebook"></a>
+          <a href="#"><img src="./images/youtube.png" alt="youtube logo"></a>
         </div>
       </div>
     </div>
@@ -393,7 +424,7 @@
         <form class="newsletter-form">
           <p>Newsletter</p>
           <input type="search" placeholder="Enter your e-mail">
-          <a href=""><img src="./images/arrow.png" alt=""></a>
+          <a href="#"><img src="./images/arrow.png" alt="arrow icon"></a>
         </form>
         <p>©2024 Design & Published By Ahn seohee. All Rights Reserved</p>
       </div>
