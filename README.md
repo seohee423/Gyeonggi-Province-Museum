@@ -1,7 +1,12 @@
-# 경기도박물관<br>웹 디자인&퍼블리싱 작업 일지 (240606 - 240612)
+# 경기도박물관<br>웹 디자인&퍼블리싱 작업 일지 (240606 - 240613)
 https://seohee423.github.io/Gyeonggi-Province-Museum/
 
 ----
+
+## 240627
+#### html&css
+- footer sns link 포트폴리오, 작업일지 링크로 변경<br>
+- hover시 underline 그려지는 이벤트 적용 
 
 ## 240613
 - 깃허브 페이지 생성<br>
